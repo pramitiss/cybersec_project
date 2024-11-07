@@ -19,11 +19,11 @@ In the code, various Python libraries for data analysis, machine learning, and v
 
     StandardScaler: Scales features to have a mean of 0 and standard deviation of 1, aiding algorithms sensitive to feature scaling.
 
-Usage:
+    Usage:
 
-1. Anomaly Detection (Isolation Forest): IsolationForest is used to detect unusual network activity in the scaled data. Its predict() method classifies entries as either anomalies or normal data points, allowing for the identification of potential intrusions.
+    Anomaly Detection (Isolation Forest): IsolationForest is used to detect unusual network activity in the scaled data. Its predict() method classifies entries as either anomalies or normal data points, allowing for the identification of potential intrusions.
    
-2. Behavioural Analysis (Random Forest): RandomForestClassifier is trained on parsed network data to classify it as either normal or indicative of a DDoS attack. This model's performance is assessed using classification_report(), and train_test_split() divides the data into training and testing sets for accuracy evaluation.
+    Behavioural Analysis (Random Forest): RandomForestClassifier is trained on parsed network data to classify it as either normal or indicative of a DDoS attack. This model's performance is assessed using classification_report(), and train_test_split() divides the data into training and testing sets for accuracy evaluation.
 
 4. Scapy (scapy)
 
