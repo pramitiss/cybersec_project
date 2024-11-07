@@ -13,12 +13,17 @@ In the code, various Python libraries for data analysis, machine learning, and v
 
     Purpose: This library offers a range of machine learning tools, including algorithms for classification, regression, clustering, and anomaly detection.
     Modules Used:
-        IsolationForest: This algorithm is designed for anomaly detection and works by isolating observations within the feature space using random forests.
-        RandomForestClassifier: A classification model built with multiple decision trees, which aggregates their predictions for robust classification, especially on complex data.
-        StandardScaler: Scales features to have a mean of 0 and standard deviation of 1, aiding algorithms sensitive to feature scaling.
-    Usage:
-        Anomaly Detection: IsolationForest is used to detect unusual network activity in scaled data. Its predict() method classifies entries as either anomalies or normal.
-        Classification: RandomForestClassifier is trained on parsed network data to classify it as normal or indicative of a DDoS attack. The model's performance is assessed using classification_report(), and train_test_split() divides the data for training and testing.
+     Isolation Forest: An algorithm for identifying anomalies in a dataset, Isolation Forest isolates observations in the feature space using random decision trees. Each data point is either classified as an inlier or an outlier based on its isolation score, making it effective for detecting anomalies in network traffic data.
+   
+    Random Forest Classifier: A versatile and powerful classification model based on an ensemble of decision trees. Each tree votes on the classification of data points, and the final prediction is determined by the majority vote, making it effective in classifying complex datasets and robust against overfitting.
+
+    StandardScaler: Scales features to have a mean of 0 and standard deviation of 1, aiding algorithms sensitive to feature scaling.
+
+Usage:
+
+1. Anomaly Detection (Isolation Forest): IsolationForest is used to detect unusual network activity in the scaled data. Its predict() method classifies entries as either anomalies or normal data points, allowing for the identification of potential intrusions.
+   
+2. Behavioural Analysis (Random Forest): RandomForestClassifier is trained on parsed network data to classify it as either normal or indicative of a DDoS attack. This model's performance is assessed using classification_report(), and train_test_split() divides the data into training and testing sets for accuracy evaluation.
 
 4. Scapy (scapy)
 
