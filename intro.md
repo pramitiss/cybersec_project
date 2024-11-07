@@ -6,7 +6,8 @@ We explore each of these detection techniques in detail, examining their underly
 
 
 DESCRIPTION
-1. Anomaly-Based Detection
+
+1. Anomaly-Based Detection (Done by Pramiti Shekhar Singh 21BCE3479):
 Anomaly-based detection is centered on identifying deviations from typical network behavior. The foundation of this method lies in its ability to define a baseline for what constitutes “normal” traffic patterns and flag deviations as potential threats. It combines statistical methods, machine learning, and dynamic threshold setting to accomplish this.
 •	Detailed Baseline Creation:
 o	Data Collection: The system collects traffic data over an extended period, capturing attributes such as packet size, rate of requests, user session durations, and connection types. Baseline creation typically requires weeks or months of observation to account for daily, weekly, and seasonal variations.
@@ -33,7 +34,7 @@ o	Limitations:
 
 
 
-2. Behavioral-Based Detection
+2. Behavioral-Based Detection (Done by Rohan Bansal 21BCE2443):
 Behavioral-based detection is especially useful for identifying anomalies at the user or application level, as it focuses on typical interactions and usage patterns. This method relies on observing entities within the network (like users or devices) over time to build behavioral profiles.
 •	Behavioral Profiling Process:
 o	User Profiles: Profiles for individual users are built by tracking login times, session durations, frequency of page visits, and other usage patterns. For example, a user may normally access specific files between 9 a.m. and 5 p.m. If they suddenly start downloading large amounts of data at odd hours, it could indicate an attack.
