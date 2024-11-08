@@ -43,7 +43,25 @@ In the code, various Python libraries for data analysis, machine learning, and v
     Usage:
         Histplot: Displays packet size and duration distributions, with KDE for a smoother visualization.
         Line Plot: Tracks packet rate changes over time, identifying spikes or irregular patterns.
+   
+7. dpkt: A Python library used for fast, simple packet creation and parsing.
 
+    Here, it is used to read and parse the packets from a .pcap file and extract network-level information like IP addresses and ports.
+
+9. socket: A built-in Python library for low-level networking interfaces.
+  
+    In this code, it is used to convert IP addresses from binary format to a readable string format (inet_ntoa).
+
+10. json: A Python library for working with JSON data.
+
+    Here, it is used to read the signature patterns from a JSON file and load them into a Python data structure for comparison.
+
+Custom Functions:
+
+   1. read_pcap_file: Reads and parses a .pcap file, yielding each flow’s source IP, destination IP, source port, and destination port.
+   2. extract_features: Extracts and structures relevant features from the packet data.
+   3. match_signature: Compares extracted features to known signatures from a JSON file to detect potential attacks.
+   4. generate_alert: Outputs an alert when a suspicious signature is detected.
 Code Workflow Summary
 
   1. Data Loading and Cleaning: The CSV file is loaded and preprocessed, removing infinite values.
